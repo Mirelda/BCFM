@@ -15,8 +15,17 @@ def whoami():
             'lastname':x.get('lastname','Diker')})
 
 
-@app.route("/alert", methods = ['GET','POST'])
+@app.route("/alert", methods = ['POST'])
 def alert():
-    return 'JSON Object Example'
+    if request.method == 'POST' :
+        firstname = request.form.get('firstname')
+        lastname = request.form.get('lastname')
+        return jsonify({'firstname': x.get('firstname','Mirelda'),
+            'lastname':x.get('lastname','Diker')})
+    else:
+        return "Geçersiz"
+
+
+        
 
 app.run(debug=True)
