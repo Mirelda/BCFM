@@ -1,4 +1,4 @@
-# ** BestCloud Academy Case Study ** 
+#  **BestCloud Academy Case Study**  
 
 ##  _Mirelda Diker_  
 
@@ -19,8 +19,8 @@
     - Api tested by using reqbin.com
 
 ### Containerize 
-    - Build 
-    "' docker build -t flask-api:latest . "'
-    - Run
-    "' docker run -d -p 5000:5000 flask-api  "'
-    
+- Build 
+>docker build -t flask-api:latest .
+- Run
+>docker run -d -p 5000:5000 flask-api  
+
