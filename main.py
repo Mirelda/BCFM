@@ -15,6 +15,6 @@ def whoami():
             'lastname':x.get('lastname','')})
 
 
-
+@app.route("/alert")
     
 app.run(debug=True)
