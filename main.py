@@ -27,4 +27,4 @@ def alert():
 
         
 
-app.run(debug=True)
+app.run()
