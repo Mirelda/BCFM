@@ -11,10 +11,12 @@ def index():
 @app.route('/whoami', methods = ['GET'])
 def whoami():
     x = request.args
-    return jsonify({'firstname': x.get('firstname',''),
-            'lastname':x.get('lastname','')})
+    return jsonify({'firstname': x.get('firstname','Mirelda'),
+            'lastname':x.get('lastname','Diker')})
 
 
-@app.route("/alert")
-    
+@app.route("/alert", methods = ['GET','POST'])
+def alert():
+    return 'JSON Object Example'
+
 app.run(debug=True)
